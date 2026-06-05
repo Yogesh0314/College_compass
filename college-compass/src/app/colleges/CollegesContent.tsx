@@ -269,7 +269,7 @@ export default function CollegesContent() {
                   <X className="h-12 w-12" />
                 </div>
                 <h3 className="text-2xl font-black text-gray-900 mb-2 tracking-tight">No results found</h3>
-                <p className="text-gray-400 font-medium max-w-sm mx-auto">We couldn't find any colleges matching your current filters. Try expanding your search area.</p>
+                <p className="text-gray-400 font-medium max-w-sm mx-auto">We couldn&apos;t find any colleges matching your current filters. Try expanding your search area.</p>
               </div>
             )}
           </div>

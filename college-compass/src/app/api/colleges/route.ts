@@ -12,7 +12,7 @@ export async function GET(req: Request) {
     const limit = parseInt(searchParams.get('limit') || '6');
     const skip = (page - 1) * limit;
 
-    const whereClause: any = {
+    const whereClause: { AND: any[] } = {
       AND: [
         {
           OR: [

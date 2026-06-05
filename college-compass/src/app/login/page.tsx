@@ -138,7 +138,7 @@ export default function AuthPage() {
           </form>
 
           <div className="mt-8 text-center text-sm text-gray-500">
-            {isLogin ? "Don't have an account?" : "Already have an account?"}{' '}
+            {isLogin ? "Don&apos;t have an account?" : "Already have an account?"}{' '}
             <button
               onClick={() => setIsLogin(!isLogin)}
               className="font-bold text-blue-600 hover:underline"

@@ -12,7 +12,7 @@ interface CollegeCardProps {
     fees: number;
     rating: number;
     placementRate: number;
-    image?: string;
+    image?: string | null;
   };
   isSaved?: boolean;
   onToggleSave?: (id: string) => void;
