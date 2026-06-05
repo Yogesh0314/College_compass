@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import Link from 'next/link';
 import { MapPin, Star, GraduationCap, ArrowRight, Heart } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -19,20 +20,24 @@ interface CollegeCardProps {
 }
 
 export default function CollegeCard({ college, isSaved, onToggleSave }: CollegeCardProps) {
+  const [imgError, setImgError] = useState(false);
+
   return (
     <div className="group overflow-hidden rounded-2xl border bg-white transition-all hover:shadow-lg">
       <div className="relative h-48 w-full overflow-hidden bg-gray-100">
-        {college.image ? (
+        {college.image && !imgError ? (
           // eslint-disable-next-line @next/next/no-img-element
           <img 
             src={college.image} 
             alt={college.name} 
             referrerPolicy="no-referrer"
+            onError={() => setImgError(true)}
             className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
           />
         ) : (
-          <div className="flex h-full w-full items-center justify-center bg-blue-50">
-            <GraduationCap className="h-12 w-12 text-blue-200" />
+          <div className="flex h-full w-full flex-col items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-50 text-blue-300">
+            <GraduationCap className="h-16 w-16 mb-2" />
+            <span className="text-[10px] font-black uppercase tracking-widest opacity-50">Campus Preview</span>
           </div>
         )}
         <button 

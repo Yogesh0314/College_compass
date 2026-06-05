@@ -22,7 +22,7 @@ export default function CollegesContent() {
   const [search, setSearch] = useState(searchParams.get('q') || '');
   const [location, setLocation] = useState(searchParams.get('location') || '');
   const [minRating, setMinRating] = useState(parseInt(searchParams.get('minRating') || '0'));
-  const [maxFee, setMaxFee] = useState(parseInt(searchParams.get('maxFee') || '200000'));
+  const [maxFee, setMaxFee] = useState(parseInt(searchParams.get('maxFee') || '1000000'));
   const [page, setPage] = useState(parseInt(searchParams.get('page') || '1'));
   
   const [showToast, setShowToast] = useState(false);
