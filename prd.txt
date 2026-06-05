@@ -1,0 +1,298 @@
+# Product Requirements Document (PRD)
+
+# Project Name
+
+College Compass – College Discovery & Comparison Platform
+
+## 1. Overview
+
+College Compass is a web platform that helps students discover, compare, and save colleges based on important factors such as fees, ratings, placements, and location.
+
+The platform aims to simplify the college selection process by providing structured information and comparison tools in one place.
+
+---
+
+# 2. Problem Statement
+
+Students often visit multiple websites to research colleges, compare fees, placements, and reviews.
+
+This process is time-consuming and confusing.
+
+College Compass provides a centralized platform where students can search, compare, and save colleges easily.
+
+---
+
+# 3. Target Users
+
+### Primary Users
+
+* Students seeking college admissions
+* Students comparing colleges
+
+### Secondary Users
+
+* Parents
+* Career counselors
+
+---
+
+# 4. Goals
+
+### Business Goals
+
+* Provide a college discovery experience
+* Demonstrate scalable architecture
+* Showcase full-stack engineering skills
+
+### User Goals
+
+* Search colleges quickly
+* Compare colleges side-by-side
+* Save favorite colleges
+* View detailed college information
+
+---
+
+# 5. MVP Features
+
+## Feature 1: Authentication
+
+Users can:
+
+* Register account
+* Login
+* Logout
+
+### Acceptance Criteria
+
+* User credentials stored securely
+* JWT/session-based authentication
+* Protected routes for saved colleges
+
+---
+
+## Feature 2: College Listing
+
+Display list of colleges.
+
+Each card contains:
+
+* College Name
+* Location
+* Rating
+* Fees
+* Placement Percentage
+
+### Acceptance Criteria
+
+* Pagination support
+* Responsive layout
+* Data fetched from API
+
+---
+
+## Feature 3: Search & Filters
+
+Users can filter colleges by:
+
+* Location
+* Rating
+* Fee Range
+
+### Acceptance Criteria
+
+* Real-time filtering
+* URL query support
+* Backend filtering
+
+---
+
+## Feature 4: College Details Page
+
+Display:
+
+* Overview
+* Courses Offered
+* Fees
+* Placement Statistics
+* Ratings
+
+### Acceptance Criteria
+
+* Dynamic route
+* Data loaded from database
+
+---
+
+## Feature 5: College Comparison
+
+Users can compare 2–3 colleges.
+
+Comparison includes:
+
+* Fees
+* Rating
+* Location
+* Placement Percentage
+
+### Acceptance Criteria
+
+* Side-by-side comparison table
+* Easy add/remove colleges
+
+---
+
+## Feature 6: Saved Colleges
+
+Authenticated users can:
+
+* Save colleges
+* Remove saved colleges
+* View saved list
+
+### Acceptance Criteria
+
+* User-specific saved colleges
+* Protected API routes
+
+---
+
+# 6. Non-Functional Requirements
+
+### Performance
+
+* Page load under 3 seconds
+* Optimized API responses
+
+### Security
+
+* Password hashing using bcrypt
+* Input validation
+* Protected routes
+
+### Reliability
+
+* Graceful error handling
+* Empty state support
+* Loading state support
+
+### Responsiveness
+
+* Mobile
+* Tablet
+* Desktop
+
+---
+
+# 7. Tech Stack
+
+Frontend:
+
+* Next.js
+* React
+* TypeScript
+* TailwindCSS
+
+Backend:
+
+* Next.js API Routes
+* TypeScript
+
+Database:
+
+* PostgreSQL
+* Prisma ORM
+
+Deployment:
+
+* Vercel
+* Neon PostgreSQL
+
+---
+
+# 8. Core Pages
+
+### Home Page
+
+* Search bar
+* Featured colleges
+
+### Colleges Page
+
+* Listings
+* Filters
+* Pagination
+
+### College Details Page
+
+* College information
+* Courses
+* Placements
+
+### Compare Page
+
+* Comparison table
+
+### Saved Colleges Page
+
+* User bookmarks
+
+### Login/Register Page
+
+* Authentication
+
+---
+
+# 9. Database Entities
+
+User
+
+* id
+* name
+* email
+* password
+
+College
+
+* id
+* name
+* location
+* fees
+* rating
+* placementPercentage
+
+Course
+
+* id
+* collegeId
+* name
+* duration
+
+SavedCollege
+
+* id
+* userId
+* collegeId
+
+Review
+
+* id
+* collegeId
+* userName
+* rating
+* comment
+
+---
+
+# 10. Success Criteria
+
+A user should be able to:
+
+1. Create an account
+2. Search colleges
+3. Apply filters
+4. View college details
+5. Compare colleges
+6. Save favorite colleges
+
+All features should work correctly using database-backed APIs and a deployed production environment.

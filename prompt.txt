@@ -1,0 +1,87 @@
+You are a senior full-stack engineer.
+
+Build a clean MVP for **College Compass – College Discovery & Comparison Platform**.
+
+Use the planning files in this folder:
+
+* PRD
+* UI design screenshots
+* Database schema
+* System architecture diagram
+
+Tech stack:
+
+* Next.js App Router
+* React
+* TypeScript
+* TailwindCSS
+* Next.js API Routes
+* Prisma ORM
+* PostgreSQL
+* JWT authentication
+* bcrypt password hashing
+
+Important rules:
+
+* Do not overbuild
+* Do not add unnecessary features
+* Keep code simple and readable
+* Use reusable components
+* Follow the UI screenshots closely
+* All college data must come from the database, not hardcoded frontend arrays
+* Add loading, error, and empty states
+* Make it desktop-first but responsive
+
+Build these features:
+
+1. Authentication
+
+* Register
+* Login
+* Logout
+* JWT/session handling
+* Protected saved colleges page
+
+2. College Listing
+
+* College cards
+* Search by name/location
+* Filters by location, fee range, and rating
+* Pagination
+
+3. College Detail Page
+
+* Dynamic route `/colleges/[id]`
+* Show overview, courses, fees, rating, placement percentage, and reviews
+
+4. Compare Colleges
+
+* Compare 2–3 colleges
+* Side-by-side comparison table
+* Compare fees, rating, location, placement percentage, and courses
+
+5. Saved Colleges
+
+* Logged-in user can save a college
+* Remove saved college
+* View saved colleges page
+
+Database models:
+
+* User
+* College
+* Course
+* Review
+* SavedCollege
+
+Also create:
+
+* Prisma schema
+* Database seed file with 10 realistic Indian colleges
+* API routes for auth, colleges, saved colleges, and comparison
+* README.md with setup instructions
+* .env.example
+
+First create the project structure and implementation plan.
+Then implement step by step.
+After each major step, explain what files were created and how to run/test it.
