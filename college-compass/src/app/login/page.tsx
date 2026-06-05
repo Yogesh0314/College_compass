@@ -78,7 +78,7 @@ export default function AuthPage() {
                     required
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full rounded-xl border border-gray-200 py-2.5 pl-10 pr-4 outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600"
+                    className="w-full rounded-xl border border-gray-200 py-2.5 pl-10 pr-4 text-gray-900 outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600"
                     placeholder="John Doe"
                   />
                 </div>
@@ -94,7 +94,7 @@ export default function AuthPage() {
                   required
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="w-full rounded-xl border border-gray-200 py-2.5 pl-10 pr-4 outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600"
+                  className="w-full rounded-xl border border-gray-200 py-2.5 pl-10 pr-4 text-gray-900 outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600"
                   placeholder="john@example.com"
                 />
               </div>
@@ -109,7 +109,7 @@ export default function AuthPage() {
                   required
                   value={formData.password}
                   onChange={(e) => setFormData({ ...formData, password: e.target.value })}
-                  className="w-full rounded-xl border border-gray-200 py-2.5 pl-10 pr-4 outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600"
+                  className="w-full rounded-xl border border-gray-200 py-2.5 pl-10 pr-4 text-gray-900 outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600"
                   placeholder="••••••••"
                 />
               </div>
